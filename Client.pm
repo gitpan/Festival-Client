@@ -24,7 +24,7 @@ require 'dumpvar.pl';
 @ISA = qw(Exporter);
 @EXPORT = qw( Default_Client_PORT );
 @EXPORT_OK = qw();
-$VERSION = "0.01";
+$VERSION = "1.0";
 
 =head1 NAME
 

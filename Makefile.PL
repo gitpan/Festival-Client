@@ -26,9 +26,10 @@ sub MY::postamble {
 WEBDIR = /home/gossamer/websrc/docs/code
 WEB_FILELIST = $(WEBDIR)/file-list
 
-webdist: $(DISTVNAME).tar$(SUFFIX)
+webdist: dist
 	@$(MKPATH) $(WEBDIR)/$(DISTNAME)/
 	cp $(DISTVNAME).tar$(SUFFIX) $(WEBDIR)/$(DISTNAME)/
+	cp README $(WEBDIR)/$(DISTNAME)/$(DISTVNAME).README
 
 '
 }
